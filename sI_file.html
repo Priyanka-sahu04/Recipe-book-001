@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Book</title>
+    <link rel="stylesheet" href="sI_file.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html">
+            <img src="https://mrehanamjad.github.io/coding-quiz-app/images/Home.png" alt="">
+        </a>
+        <h1>South Indian Food</h1>
+    </nav>
+
+    <section id="recipeees">
+        <article id="Dosa">
+            <h2>Dosa</h2>
+            <img src="https://sukhis.com/app/uploads/2020/01/Dosa.jpg" alt="Dosa">
+            <p>Crispy and thin rice crepes often enjoyed with various chutneys and sambar.</p>
+            <a href="Dosa.html" class="button-link">Read More</a>
+            <p>Watch Video <a href="https://youtu.be/sX5pYdNbmgo?si=Ho6t9LpoMOANlikE">click here</a></p>
+        </article>
+
+        <article id="Idli">
+            <h2>Idli</h2>
+            <img src="https://www.awesomecuisine.com/wp-content/uploads/2007/11/Idli-with-sambar-and-chutney.jpg" alt="Idli">
+            <p>Soft, steamed rice cakes served with sambar and chutney.</p>
+            <a href="idli.html" class="button-link">Read More</a>
+            <p>Watch Video <a href="https://youtu.be/zFZJPVSkiMI?si=ll1-4CDePppE-uoa">click here</a></p>
+        </article>
+
+        <article id="Sambar">
+            <h2>Sambar</h2>
+            <img src="https://img.onmanorama.com/content/dam/mm/en/food/features/images/2024/3/23/sambar.jpg" alt="Sambar">
+            <p>A spicy and tangy lentil stew made with vegetables.</p>
+            <a href="Sambar.html" class="button-link">Read More</a>
+            <p>Watch Video <a href="https://youtu.be/EkJC0GgY5wk?si=g0kNIGdJfqIxHe_X">click here</a></p>
+        </article>
+
+        <article id="Vada">
+            <h2>Vada</h2>
+            <img src="https://images.navbharatlive.com/wp-content/uploads/2022/03/Medu-Vada_V_jpg--442x260-4g.webp?sw=412&dsz=442x260&iw=392&p=false&r=2.625" alt="Vada">
+            <p>Fried lentil donuts that are crispy on the outside and soft on the inside.</p>
+            <a href="vada.html" class="button-link">Read More</a>
+            <p>Watch Video <a href="https://youtu.be/5zj93-DvLic?si=uWW-ykZ8hnvdX3RM">click here</a></p>
+        </article>
+
+        <article id="Pongal ">
+            <h2>Pongal</h2>
+            <img src="https://www.vegrecipesofindia.com/wp-content/uploads/2019/01/ven-pongal-recipe-1a.jpg" alt="Pongal ">
+            <p>A savory semolina dish often mixed with vegetables and spices.</p>
+            <a href="Pongal.html" class="button-link">Read More</a>
+            <p>Watch Video <a href="https://youtu.be/LCKO_4tSNiA?si=BGgg6dTAeUN3WvrK">click here</a></p>
+        </article>
+    </section>
+
+    <section id="search">
+        <h2>Search Recipes</h2>
+        <input type="text" id="search-bar" placeholder="Search by name or ingredients...">
+    </section>
+ 
+    <button id="toggle-form-btn">Add Recipe</button>
+
+    <div id="recipe-form-container" style="display: none;">
+        <h2>Add a New Recipe</h2>
+        <form id="recipe-form">
+            <input type="text" id="recipe-name" placeholder="Recipe Name" required>
+            <input type="text" id="recipe-ingredients" placeholder="Ingredients (comma separated)" required>
+            <textarea id="recipe-instructions" placeholder="Instructions" required></textarea>
+            <input type="text" id="recipe-image" placeholder="Image URL (optional)">
+            <input type="text" id="recipe-video" placeholder="Video URL (optional)">
+            <button type="submit">Add Recipe</button>
+        </form>
+    </div>
+
+    <div id="recipe-lightbox" class="lightbox" style="display: none;">
+        <div class="lightbox-content">
+            <span class="close-btn">&times;</span>
+            <div class="lightbox-header">
+                <img id="lightbox-recipe-image" src="" alt="Recipe Image">
+                <div class="lightbox-info">
+                    <h1 id="lightbox-recipe-title"></h1>
+                    <p id="lightbox-recipe-video-container"></p>
+                </div>
+            </div>
+            <div class="lightbox-details">
+                <div class="lightbox-ingredients">
+                    <h3>Ingredients</h3>
+                    <p id="lightbox-recipe-ingredients"></p>
+                </div>
+                <div class="lightbox-instructions">
+                    <h3>Instructions</h3>
+                    <p id="lightbox-recipe-instructions"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <section id="recipe-list">
+        <h2>Your Recipes</h2>
+        <div id="recipes"></div>
+    </section>
+
+    <script src="sI_file.js"></script>
+</body>
+</html>
